@@ -14,7 +14,7 @@ export default class Overview extends Component{
         return(
           <li key={task.ID}>
             <form onSubmit={this.props.confirmEdit} value={task.ID}>
-              <input placeholder={task.name} id='newTaskName'/>
+              <input defaultValue={task.name} id='newTaskName'/>
               <button value={task.Id} type='submit'>Confirm Edit</button>
             </form>
           </li>
